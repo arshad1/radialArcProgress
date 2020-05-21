@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html { height:100vh;}
+  h1{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {background: #fff; font-family:'Roboto';}
+  .container { margin:0 auto; text-align:center; max-width:600px;}
+  </style>  
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+ 
+<div class="jquery-script-ads">
+ </div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+<h1>jQuery ArcRadial Plugin</h1>
+<div style="margin: 0 auto;display: block;">
+<div  style="width:200px;height:200px;float:left;">
+  <div class="radial1 variablename"  data-percentage="0.8" data-sold="5000" data-caption="Sold" data-sub-caption="10000" ></div> 
+</div>
+
+<div style="width:100px;height:100px;float:left;">
+  <div class="radial2 variablename"  data-percentage="0.7" data-sold="2000" data-caption="Sold" data-sub-caption="10000"></div> 
+</div>
+
+<div style="width:100px;height:100px;float:left;">
+  <div class="radial3 variablename"  data-percentage="0.5" data-sold="2000" data-caption="Sold" data-sub-caption="10000"></div> 
+</div>
+
+</div>
+ </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="arc.js"></script>
+<script>
+//$('.radial').arcRadial({  color: "#DDA40A"});
+$('.radial1').arcRadial({  color: "#DDA40A"});
+$('.radial2').arcRadial({  color: "#556b2f",subCaptionColor:"#ccc"});
+$('.radial3').arcRadial({  color: "#dddddd",subCaptionColor:"#ddd",outerArcGradient: ['#cccccc','#dddddd'],innerArcGradient: ['#cccccc','#dddddd']});
+</script>
+ 
+</body>
+</html>
